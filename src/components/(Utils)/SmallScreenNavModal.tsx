@@ -74,15 +74,6 @@ const Modal = ({
         {navLinks?.map((link, index) => {
           return (
             <a
-              style={{
-                display:
-                  link.pathname.includes("dashboard") ||
-                  link.pathname.includes("deposit") ||
-                  link.pathname.includes("withdraw") ||
-                  link.pathname.includes("transactions")
-                    ? "none"
-                    : "flex",
-              }}
               key={index}
               className={` ${containerStylesInnerLink} `}
               href={link.pathname}
@@ -120,8 +111,8 @@ const Modal = ({
                     state?.title === link.title
                       ? "#97CF13"
                       : pathname.startsWith(link.pathname)
-                      ? "black"
-                      : "-moz-initial",
+                        ? "black"
+                        : "-moz-initial",
                 }}
               >
                 {link.title}
