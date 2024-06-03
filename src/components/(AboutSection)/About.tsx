@@ -9,8 +9,8 @@ const AboutSection = () => {
   return (
     <>
       <div className="AboutSection">
-        <h2>{t`about_us`}</h2>
-        <p>{t("mission")}</p>
+        <h2>{t("about_us")}</h2>
+        < p > {t("mission")}</p>
       </div>
       <div className="AboutSection2">
         <Image
@@ -21,12 +21,12 @@ const AboutSection = () => {
           alt="background"
         />
         <div className="AboutSection2-text">
-          <h3>{t`our_services`}</h3>
+          <h3>{t("our_services")}</h3>
           <p>
-            1. <b>{t`financing.title`}</b>: {t("financing.description")}
+            1. <b>{t("financing.title")}</b>: {t("financing.description")}
           </p>
           <p>
-            2. <b>{t`withdrawal.title`}</b>: {t`withdrawal.description`}
+            2. <b>{t("withdrawal.title")}</b>: {t("withdrawal.description")}
           </p>
           <p>
             3. <b>{t("support.title")}</b>: {t("support.description")}

@@ -7,6 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import LanguageToggle from "@/components/(LanguageToggle)/languageToggle";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import StoreProvider from "../StoreProvider";
+import { ThemeProvider } from 'next-themes'
 import axios from "axios";
 import { store } from "@/lib/store";
 import { setUser, fetchUser } from "@/lib/features/userSlice";
@@ -49,7 +50,9 @@ export default function RootLayout({
           <StoreProvider>
             <NavState />
             {/* <LanguageToggle /> */}
-            {children}
+            <ThemeProvider>
+              {children}
+            </ThemeProvider>
           </StoreProvider>
         </NextIntlClientProvider>
       </body>
