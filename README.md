@@ -1,1 +1,1 @@
-an app to manage and fund accounts built with nextjs and typescript
+manage and fund accounts built with nextjs and typescript
