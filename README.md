@@ -1,1 +1,1 @@
-an app to manage and fund 1xbet accounts built with nextjs and typescript
+an app to manage and fund accounts built with nextjs and typescript
